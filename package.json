@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-example",
+  "version": "1.0.0",
+  "description": "NodeJS pipeline for Gaia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaia-pipeline/nodejs-example.git"
+  },
+  "keywords": [
+    "gaia",
+    "pipeline",
+    "nodejs"
+  ],
+  "author": "Michel Vocks",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gaia-pipeline/nodejs-example/issues"
+  },
+  "homepage": "https://github.com/gaia-pipeline/nodejs-example#readme",
+  "dependencies": {
+    "@gaia-pipeline/nodesdk": "^0.1.1"
+  }
+}
