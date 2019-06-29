@@ -1,7 +1,7 @@
 const nodesdk = require("@gaia-pipeline/nodesdk");
 
 function CreateUser(args) {
-    console.log("Hello World!");
+    console.error("Hello World!");
 }
 
 // Serve
