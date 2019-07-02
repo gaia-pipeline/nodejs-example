@@ -71,37 +71,37 @@ try {
             handler: MigrateDB,
             title: 'DB Migration',
             description: 'Imports newest test data dump and migrates to newest version.',
-            depends_on: ['Create DB User']
+            dependson: ['Create DB User']
         },
         {
             handler: CreateNamespace,
             title: 'Create K8S Namespace',
             description: 'Create a new Kubernetes namespace for the new test environment.',
-            depends_on: ['DB Migration']
+            dependson: ['DB Migration']
         },
         {
             handler: CreateDeployment,
             title: 'Create K8S Deployment',
             description: 'Create a new Kubernetes deployment for the new test environment.',
-            depends_on: ['Create K8S Namespace']
+            dependson: ['Create K8S Namespace']
         },
         {
             handler: CreateService,
             title: 'Create K8S Service',
             description: 'Create a new Kubernetes service for the new test environment.',
-            depends_on: ['Create K8S Namespace']
+            dependson: ['Create K8S Namespace']
         },
         {
             handler: CreateIngress,
             title: 'Create K8S Ingress',
             description: 'Create a new Kubernetes ingress for the new test environment.',
-            depends_on: ['Create K8S Namespace']
+            dependson: ['Create K8S Namespace']
         },
         {
             handler: Cleanup,
             title: 'Clean up',
             description: 'Removes all temporary files.',
-            depends_on: ['Create K8S Deployment', 'Create K8S Service', 'Create K8S Ingress']
+            dependson: ['Create K8S Deployment', 'Create K8S Service', 'Create K8S Ingress']
         }
     ]);
 } catch (err) {
