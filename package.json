@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/gaia-pipeline/nodejs-example#readme",
   "dependencies": {
-    "@gaia-pipeline/nodesdk": "^0.1.4"
+    "@gaia-pipeline/nodesdk": "^0.1.5"
   }
 }
