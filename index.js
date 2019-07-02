@@ -15,11 +15,10 @@ try {
             description: 'This job prints out all given arguments.',
             args: [
                 {
-                    description: 'Please provide the username:',
                     // This will use a textfield in the UI. You can also use
                     // "textarea", "boolean" and "vault".
-                    type: 'textfield',
-                    key: 'username'
+                    type: 'vault',
+                    key: 'dbpassword'
                 }
             ]
         },
