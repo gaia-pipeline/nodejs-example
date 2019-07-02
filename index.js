@@ -1,9 +1,9 @@
 const nodesdk = require('@gaia-pipeline/nodesdk');
 
 function PrintArgs(args) {
-    _.each(args, function (arg) {
-        console.error('Key: ' + arg.key + '; Value: ' + arg.value);
-    })
+    for (let i = 0; i < args.length; i++) {
+        console.error('Key: ' + args[i].key + '; Value: ' + args[i].value);
+    }
 }
 
 // Serve
