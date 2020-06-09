@@ -1,4 +1,4 @@
-const nodesdk = require('@gaia-pipeline/nodesdk');
+const nodesdk = require('gaiatestnodesdk');
 
 function DoSomethingAwesome(args) {
     console.error('This output will be streamed back to gaia and will be displayed in the pipeline logs.');
